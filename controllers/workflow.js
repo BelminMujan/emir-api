@@ -1,3 +1,4 @@
+const stage = require("../models/stage");
 const workflow = require("../models/workflow");
 
 const getWorkflows = async (req, res) => {
@@ -7,6 +8,14 @@ const getWorkflows = async (req, res) => {
 const getWorkflow = async (req, res) => {
   let data = await workflow.find({ _id: req.params.id });
   res.send(data);
+};
+const getWorkflowStages = async (req, res) => {
+  try {
+    const stages = await stage.find({ workflow: req.params.id });
+    res.send(stages);
+  } catch (e) {
+    res.send(e);
+  }
 };
 
 const addWorkflow = async (req, res) => {
@@ -44,6 +53,7 @@ const deleteWorkflow = async (req, res) => {
 module.exports = {
   getWorkflows,
   getWorkflow,
+  getWorkflowStages,
   addWorkflow,
   updateWorkflow,
   deleteWorkflow,

@@ -1,0 +1,490 @@
+{
+	"info": {
+		"_postman_id": "b8e07a94-dc0d-4db4-a930-bbce243c46ce",
+		"name": "WorkflowsCollection - Emir",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all workflows",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Tesdtupdateasdfasdfasdfadfd\"\n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}} /api/workflow",
+					"host": [
+						"{{base_url}} "
+					],
+					"path": [
+						"api",
+						"workflow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get workflow by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/workflow/621e955f9d64d16cfe15c624",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"workflow",
+						"621e955f9d64d16cfe15c624"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Stages by workflow id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/workflow/621e955f9d64d16cfe15c624/stages",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"workflow",
+						"621e955f9d64d16cfe15c624",
+						"stages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add workflow",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Test\",\n    \"description\":\"TestDesc\",\n    \"smallText\":\"TestText\",\n    \"type\":\"TestType\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/workflow",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"workflow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete workflow",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/workflow/621e955f9d64d16cfe15c624",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"workflow",
+						"621e955f9d64d16cfe15c624"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update workflow",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/workflow/621e955f9d64d16cfe15c624",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"workflow",
+						"621e955f9d64d16cfe15c624"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all stages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Tesdtupdateasdfasdfasdfadfd\"\n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}} /api/stage",
+					"host": [
+						"{{base_url}} "
+					],
+					"path": [
+						"api",
+						"stage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get stage by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Tesdtupdateasdfasdfasdfadfd\"\n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}} /api/stage/621f31407b4cda6f1cce8dfb",
+					"host": [
+						"{{base_url}} "
+					],
+					"path": [
+						"api",
+						"stage",
+						"621f31407b4cda6f1cce8dfb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all actions by stage",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Tesdtupdateasdfasdfasdfadfd\"\n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}} /api/stage/621f31407b4cda6f1cce8dfb/actions",
+					"host": [
+						"{{base_url}} "
+					],
+					"path": [
+						"api",
+						"stage",
+						"621f31407b4cda6f1cce8dfb",
+						"actions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Stage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Tesdtupdateasdfasdfasdfadfd\"\n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}} /api/stage",
+					"host": [
+						"{{base_url}} "
+					],
+					"path": [
+						"api",
+						"stage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Stage",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Tesdtupdateasdfasdfasdfadfd\"\n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}} /api/stage/621f31407b4cda6f1cce8dfb",
+					"host": [
+						"{{base_url}} "
+					],
+					"path": [
+						"api",
+						"stage",
+						"621f31407b4cda6f1cce8dfb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Stage",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Tesdtupdateasdfasdfasdfadfd\"\n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}} /api/stage/621f31407b4cda6f1cce8dfb",
+					"host": [
+						"{{base_url}} "
+					],
+					"path": [
+						"api",
+						"stage",
+						"621f31407b4cda6f1cce8dfb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Actions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stage\":\"621f31567b4cda6f1cce8e01\",\n    \"title\":\"Test action 6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/action",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"action"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Action by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stage\":\"621f31567b4cda6f1cce8e01\",\n    \"title\":\"Test action 6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/action/621f3a1f1547718226a4c251",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"action",
+						"621f3a1f1547718226a4c251"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add stage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stage\":\"621f31407b4cda6f1cce8dfb\",\n    \"title\":\"Tesdtupdateasdfasdfasdfadfd\"\n  \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}} /api/stage",
+					"host": [
+						"{{base_url}} "
+					],
+					"path": [
+						"api",
+						"stage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Action",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stage\":\"621f31567b4cda6f1cce8e01\",\n    \"title\":\"Test action 6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/action/621f3a1f1547718226a4c251",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"action",
+						"621f3a1f1547718226a4c251"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Action",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"stage\":\"621f31567b4cda6f1cce8e01\",\n    \"title\":\"Test action 6\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/action/621f3a1f1547718226a4c251",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"action",
+						"621f3a1f1547718226a4c251"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "localhost:5000",
+			"type": "default"
+		}
+	]
+}

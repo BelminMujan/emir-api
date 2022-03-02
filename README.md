@@ -11,6 +11,7 @@ server will run on localhost:5000
 Routes:
 Get workflows get:localhost:5000/api/workflow
 Get one forkflow get:localhost:5000/api/workflow/:workflowId
+Get stages of one forkflow get:localhost:5000/api/workflow/:workflowId/stages
 Add workflow post:localhost:5000/api/workflow
 Delete workflow delete:localost:5000/api/workflow/:workflowId
 Update workflow patch:localhost:5000/api/workflow/:workflowId
@@ -32,8 +33,8 @@ type:""
 }
 stage
 {
-workflow:"", //this one dont work yet
-image:"", //put image url
+workflow:"", //here goes workflow id
+image:"",
 type:"",
 status:""
 }

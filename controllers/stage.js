@@ -1,12 +1,23 @@
+const action = require("../models/action");
 const stage = require("../models/stage");
 
+//get all stages of one workflow
 const getStages = async (req, res) => {
+  console.log(req.params);
   let data = await stage.find({});
   res.send(data);
 };
 const getStage = async (req, res) => {
   let data = await stage.find({ _id: req.params.id });
   res.send(data);
+};
+const getStageActions = async (req, res) => {
+  try {
+    let actions = await action.find({ stage: req.params.id });
+    res.send(actions);
+  } catch (e) {
+    res.send(e);
+  }
 };
 
 const addStage = async (req, res) => {
@@ -43,6 +54,7 @@ const deleteStage = async (req, res) => {
 module.exports = {
   getStages,
   getStage,
+  getStageActions,
   addStage,
   updateStage,
   deleteStage,
