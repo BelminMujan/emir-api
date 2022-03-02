@@ -15,6 +15,6 @@ app.use("/api/workflow", workflowRouter);
 app.use("/api/stage", stageRouter);
 app.use("/api/action", actionRouter);
 
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server has started!");
 });
