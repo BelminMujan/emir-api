@@ -3,6 +3,7 @@ const action = require("../models/action");
 //get all stages of one workflow
 const getActions = async (req, res) => {
   console.log(req.params);
+  console.log('testing vscode live');
   let data = await action.find({});
   res.send(data);
 };
